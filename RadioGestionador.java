@@ -63,7 +63,7 @@ public class RadioGestionador implements ModoRadio {
     @Override
     public String cargarEmisora(int posicion) {
         if (posicion < emisorasGuardadas.size()) {
-            emisoraActual = emisorasGuardadas.get(posicion);
+            emisoraActual = emisorasGuardadas.get(posicion -1);
             return "Emisora cargada: " + emisoraActual;
         }
         return "No existe emisora en esa posición.";

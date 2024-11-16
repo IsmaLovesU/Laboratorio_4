@@ -76,6 +76,7 @@ public class Main {
                                     break;
                                 case 2:
                                     System.out.println(radioGestionador.cambiarEmisora(emisoraActual));
+                                    emisoraActual = radioGestionador.devolverEmisora();
                                     break;
                                 case 3:
                                     System.out.print("Ingrese la emisora a guardar: ");
@@ -219,6 +220,7 @@ public class Main {
                 }
             }catch(InputMismatchException e){
                 System.out.println("Error: Debe ingresar un número válido.");
+                scanner.nextLine();
             }
         }
 
