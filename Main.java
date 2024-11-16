@@ -114,6 +114,44 @@ public class Main {
                     break;
                     
                 case 4:
+                    System.out.println("\n--- Modo Teléfono ---");
+                    System.out.println("1. Conectar Teléfono");
+                    System.out.println("2. Desconectar Teléfono");
+                    System.out.println("3. Mostrar contactos");
+                    System.out.println("4. Llamar contacto");
+                    System.out.println("5. Finalizar Llamada");
+                    System.out.println("6. Cambiar a Speaker o Auriculares");
+                    System.out.print("Seleccione una opción: ");
+                    int opcionTelefono = scanner.nextInt();
+                    scanner.nextLine();
+
+                    switch (opcionTelefono) {
+                        case 1:
+                            System.out.println(telefonoGestionador.conectarTelefono());
+                            break;
+                        case 2:
+                            System.out.println(telefonoGestionador.desconectarTelefono());
+                            break;
+                        case 3:
+                            System.out.println(telefonoGestionador.mostrarContactos());
+                            break;
+                        case 4:
+                            System.out.print("Ingrese el nombre del contacto: ");
+                            String contacto = scanner.nextLine();
+                            System.out.println(telefonoGestionador.llamarContacto(contacto));
+                            break;
+                        case 5:
+                            System.out.println(telefonoGestionador.finalizarLlamada());
+                            break;
+                        case 6:
+                            System.out.print("¿Activar modo speaker? (true/false): ");
+                            Boolean sonido = scanner.nextBoolean();
+                            System.out.println(claseAGestionador.cambiar(sonido));
+                            break;
+                        default:
+                            System.out.println("Opción inválida en Modo Teléfono.");
+                    }
+                    break;
                 case 5:
                 case 6:
                     System.out.println("Cerrando el programa, nos vemos...");
