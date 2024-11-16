@@ -112,7 +112,7 @@ public class Main {
                             System.out.println("Opción inválida en Modo Reproducción.");
                     }
                     break;
-                    
+
                 case 4:
                     System.out.println("\n--- Modo Teléfono ---");
                     System.out.println("1. Conectar Teléfono");
@@ -153,6 +153,37 @@ public class Main {
                     }
                     break;
                 case 5:
+                    System.out.println("\n--- Modo Productividad ---");
+                    System.out.println("1. Planificar Viajes");
+                    System.out.print("Seleccione una opción: ");
+                    int opcionProductividad = scanner.nextInt();
+                    scanner.nextLine();
+
+                    switch (opcionProductividad) {
+                        case 1:
+                        try {
+                            System.out.print("Ingrese la fecha de inicio (yyyy-MM-dd): ");
+                            Date inicio = dateFormat.parse(scanner.nextLine());
+
+                            System.out.print("Ingrese la fecha de fin (yyyy-MM-dd): ");
+                            Date fin = dateFormat.parse(scanner.nextLine());
+
+                            System.out.print("Ingrese el lugar de inicio: ");
+                            String lugarInicio = scanner.nextLine();
+
+                            System.out.print("Ingrese el lugar de destino: ");
+                            String lugarFinal = scanner.nextLine();
+
+                            System.out.println(claseAGestionador.planificarViajes(inicio, fin, lugarInicio, lugarFinal));
+                        } catch (ParseException e) {
+                            System.out.println("Formato de fecha inválido. Use el formato yyyy-MM-dd.");
+                        }
+                            break;
+                        default:
+                            System.out.println("Opción inválida en Modo Productividad.");
+                    }
+                    break;
+
                 case 6:
                     System.out.println("Cerrando el programa, nos vemos...");
                     break;
