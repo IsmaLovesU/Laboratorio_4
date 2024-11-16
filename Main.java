@@ -52,6 +52,38 @@ public class Main {
 
             switch (opcion) {
                 case 2:
+                    System.out.println("\n--- Modo Radio ---");
+                    System.out.println("1. Cambiar Modulación");
+                    System.out.println("2. Cambiar Emisora");
+                    System.out.println("3. Guardar Emisora");
+                    System.out.println("4. Cargar Emisora");
+                    System.out.print("Seleccione una opción: ");
+                    int opcionRadio = scanner.nextInt();
+                    scanner.nextLine();
+
+                    switch (opcionRadio) {
+                        case 1:
+                            System.out.println(radioGestionador.cambiarModulacion());
+                            break;
+                        case 2:
+                            System.out.print("Ingrese la nueva emisora: ");
+                            double nuevaEmisora = scanner.nextDouble();
+                            System.out.println(radioGestionador.cambiarEmisora(nuevaEmisora));
+                            break;
+                        case 3:
+                            System.out.print("Ingrese la emisora a guardar: ");
+                            double emisora = scanner.nextDouble();
+                            System.out.println(radioGestionador.guardarEmisora(emisora));
+                            break;
+                        case 4:
+                            System.out.print("Ingrese la posición de la emisora a cargar: ");
+                            int posicion = scanner.nextInt();
+                            System.out.println(radioGestionador.cargarEmisora(posicion));
+                            break;
+                        default:
+                            System.out.println("Opción inválida en Modo Radio.");
+                }
+                break;
 
                 case 3:
                 case 4:
