@@ -82,10 +82,37 @@ public class Main {
                             break;
                         default:
                             System.out.println("Opción inválida en Modo Radio.");
-                }
-                break;
+                    }
+                    break;
 
                 case 3:
+                    System.out.println("\n--- Modo Reproducción ---");
+                    System.out.println("1. Seleccionar Lista de Reproducción");
+                    System.out.println("2. Cambiar Canción");
+                    System.out.println("3. Escuchar Canción");
+                    System.out.print("Seleccione una opción: ");
+                    int opcionReproduccion = scanner.nextInt();
+                    scanner.nextLine();
+
+                    switch (opcionReproduccion) {
+                        case 1:
+                            System.out.print("Ingrese el nombre de la lista: ");
+                            String lista = scanner.nextLine();
+                            System.out.println(reproduccionGestionador.seleccionarListaReproduccion(lista));
+                            break;
+                        case 2:
+                            System.out.print("Ingrese dirección (adelante/atras): ");
+                            String direccion = scanner.nextLine();
+                            System.out.println(reproduccionGestionador.cambiarCancion(direccion));
+                            break;
+                        case 3:
+                            System.out.println(reproduccionGestionador.escucharCancion());
+                            break;
+                        default:
+                            System.out.println("Opción inválida en Modo Reproducción.");
+                    }
+                    break;
+                    
                 case 4:
                 case 5:
                 case 6:
