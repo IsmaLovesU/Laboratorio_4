@@ -1,4 +1,14 @@
 /**
+ * Universidad del Valle de Guatemala
+ * Programación Orinetada a Objetos 
+ * Sección: 10
+ * Ing. Kimberly Barrera
+ * Autores: Andrés Ismalej 24005, Juan Gualim 24852 y Jorge Villeda 24932
+ * Clase Emisora - Laboratorio 4
+ * 15/11/2024
+*/
+
+/**
  * Clase que representa una emisora de radio con modulación y estación.
  */
 public class Emisora {
