@@ -26,7 +26,7 @@ public class Main {
         int opcion;
 
         do {
-            System.out.println("\n--- Radio Mercedes-Benz Clase A ---");
+            System.out.println("\n--- Radio Mercedes-Benz ---");
             System.out.println(isOn ? "Estado: Encendido" : "Estado: Apagado");
             System.out.println("1. Encender/Apagar");
             System.out.println("2. Modo Radio");
