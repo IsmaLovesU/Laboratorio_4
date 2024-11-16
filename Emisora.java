@@ -17,7 +17,6 @@ public class Emisora {
 
     /**
      * Constructor que inicializa una emisora con su modulación y estación.
-     * 
      * @param modulacion El tipo de modulación de la emisora (AM o FM).
      * @param estacion La frecuencia de la emisora.
      */
@@ -28,7 +27,6 @@ public class Emisora {
 
     /**
      * Obtiene el tipo de modulación de la emisora.
-     * 
      * @return El tipo de modulación (AM o FM).
      */
     public String getModulacion() {
@@ -37,7 +35,6 @@ public class Emisora {
 
     /**
      * Establece el tipo de modulación de la emisora.
-     * 
      * @param modulacion El nuevo tipo de modulación (AM o FM).
      */
     public void setModulacion(String modulacion) {
@@ -46,7 +43,6 @@ public class Emisora {
 
     /**
      * Obtiene la frecuencia de la emisora.
-     * 
      * @return La frecuencia de la emisora.
      */
     public double getEstacion() {
@@ -55,7 +51,6 @@ public class Emisora {
 
     /**
      * Establece la frecuencia de la emisora.
-     * 
      * @param estacion La nueva frecuencia de la emisora.
      */
     public void setEstacion(double estacion) {

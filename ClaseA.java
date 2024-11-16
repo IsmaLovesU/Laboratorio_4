@@ -15,7 +15,6 @@ import java.util.Date;
 public interface ClaseA {
     /**
      * Cambia el modo de sonido entre speaker y auriculares.
-     * 
      * @param sonido True para activar speaker, False para auriculares.
      * @return Mensaje indicando el cambio realizado.
      */

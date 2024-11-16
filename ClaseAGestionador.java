@@ -4,7 +4,7 @@
  * Sección: 10
  * Ing. Kimberly Barrera
  * Andrés Ismalej 24005
- * Clase ClaseAGestionador - Ejercicio 6
+ * Clase ClaseAGestionador - Laboratorio 4
  * 28/10/2024
 */
 
