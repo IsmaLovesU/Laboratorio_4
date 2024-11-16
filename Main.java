@@ -98,7 +98,7 @@ public class Main {
 
                     case 3:
                         int opcionReproduccion = 0;
-                        while(opcion != 4){
+                        while(opcionReproduccion != 4){
                             System.out.println("\n--- Modo Reproducción ---");
                             System.out.println("1. Seleccionar Lista de Reproducción");
                             System.out.println("2. Cambiar Canción");
