@@ -22,6 +22,7 @@ public class Main {
         TelefonoGestionador telefonoGestionador = new TelefonoGestionador();
         ClaseAGestionador claseAGestionador = new ClaseAGestionador();
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        double emisoraActual = radioGestionador.devolverEmisora();
 
         boolean isOn = false;
         
@@ -59,6 +60,7 @@ public class Main {
                         int opcionRadio = 0;
                         while (opcionRadio != 5){
                             System.out.println("\n--- Modo Radio ---");
+                            System.out.println("Emisora actual: " + emisoraActual);
                             System.out.println("1. Cambiar Modulación");
                             System.out.println("2. Cambiar Emisora");
                             System.out.println("3. Guardar Emisora");
@@ -73,9 +75,7 @@ public class Main {
                                     System.out.println(radioGestionador.cambiarModulacion());
                                     break;
                                 case 2:
-                                    System.out.print("Ingrese la nueva emisora: ");
-                                    double nuevaEmisora = scanner.nextDouble();
-                                    System.out.println(radioGestionador.cambiarEmisora(nuevaEmisora));
+                                    System.out.println(radioGestionador.cambiarEmisora(emisoraActual));
                                     break;
                                 case 3:
                                     System.out.print("Ingrese la emisora a guardar: ");

@@ -36,7 +36,7 @@ public class RadioGestionador implements ModoRadio {
      */
     @Override
     public String cambiarEmisora(double nuevaEmisora) {
-        emisoraActual = nuevaEmisora;
+        emisoraActual = nuevaEmisora + 0.5;
         return "Emisora cambiada a: " + nuevaEmisora;
     }
 
@@ -67,5 +67,9 @@ public class RadioGestionador implements ModoRadio {
             return "Emisora cargada: " + emisoraActual;
         }
         return "No existe emisora en esa posición.";
+    }
+
+    public double devolverEmisora(){
+        return emisoraActual;
     }
 }
