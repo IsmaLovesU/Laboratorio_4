@@ -23,7 +23,6 @@ public interface ClaseA {
 
     /**
      * Planifica un viaje con las fechas y lugares proporcionados.
-     * 
      * @param inicio Fecha de inicio del viaje.
      * @param fin Fecha de finalización del viaje.
      * @param lugar_inicio Lugar de inicio del viaje.
